@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 
 const App = () => {
   return (
-    <div>
+    <div className="h-screen w-screen">
       <Routes>
         <Route path="/login" element={<Login />} />
       </Routes>
