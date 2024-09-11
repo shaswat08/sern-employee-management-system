@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PasswordInput = ({ eye: Eye, slash: Slash }) => {
+const PasswordInput = ({ eye: Eye, slash: Slash, ...props }) => {
   const [visibility, setVisibility] = useState(false);
   return (
     <div className="flex flex-col gap-1">
@@ -13,6 +13,8 @@ const PasswordInput = ({ eye: Eye, slash: Slash }) => {
           type={visibility ? "text" : "password"}
           name="password"
           placeholder="Enter your password"
+          required
+          {...props}
         />
         <div className="absolute top-1/2 right-3 -translate-y-1/2">
           {visibility ? (
