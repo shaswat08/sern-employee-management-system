@@ -46,7 +46,7 @@ const Login = () => {
     <div className="p-7 mt-20 h-[80vh] flex items-center">
       <div className="flex flex-col gap-5 w-[30%] mx-auto p-5 border border-red-200">
         <h1 className="text-2xl font-bold tracking-widest"> Login </h1>
-        <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col gap-3">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <div className="flex flex-col gap-1">
             <label className="text-md font-semibold" htmlFor="email">
               Email

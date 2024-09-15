@@ -15,6 +15,7 @@ app.use(
 );
 app.use(express.json()); // parse json request bodies
 app.use(express.urlencoded({ extended: true })); // parse urlencoded request bodies
+app.use(express.static("uploads"));
 
 app.use("/api/admin", adminRouter); // use auth router
 
